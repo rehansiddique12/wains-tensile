@@ -49,10 +49,7 @@
     /* Append settings HTML  */
     rs_settings_append(true); /* if you want to enable dark mode, send "true" */
 
-    /* Event listeners  */
-    $(".rs-theme-settings-open-btn").on("click", function () {
-        $(".rs-theme-settings-area").toggleClass("settings-opened");
-    });
+
 
     /* Initialize RTL settings if the element is present  */
     if ($("#rs-dir-toggler").length > 0) {
@@ -66,37 +63,8 @@
     function rs_settings_append($x) {
         var settings = $('body');
         /* no need switcher then add 'd-none' */
-        var settings_html = `<div class="rs-theme-settings-area">
-        <div class="rs-theme-wrapper">
-        <div class="rs-theme-header text-center">
-           <h4 class="rs-theme-header-title">Template Settings</h4>
-        </div>
-        <!--  RTL SETTINGS  mb-20 -->
-        <div class="rs-theme-dir">
-           <label class="rs-theme-dir-main" for="rs-dir-toggler" dir="rtl">
-              <span class="rs-theme-dir-rtl"> RTL</span>
-                 <input type="checkbox" id="rs-dir-toggler">
-                 <i class="rs-theme-dir-slide"></i>
-              <span class="rs-theme-dir-ltr"> LTR</span>
-           </label>
-        </div>
-
-        <div class="rs-theme-settings">
-           <div class="rs-theme-settings-wrapper">
-              <div class="rs-theme-settings-open">
-                 <button class="rs-theme-settings-open-btn">
-                    <span class="rs-theme-settings-gear">
-                       <i class="fa-light fa-gear"></i>
-                    </span>
-                    <span class="rs-theme-settings-close">
-                       <i class="fa-regular fa-xmark"></i>
-                    </span>
-                 </button>
-              </div>
-           </div>
-        </div>
-     </div>
-         </div>`;
+        var settings_html = 
+        
         settings.append(settings_html);
     }
     // rtl setting end

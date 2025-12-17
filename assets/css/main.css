@@ -14937,8 +14937,8 @@ html.lenis body {
 }
 .rs-about-eleven .rs-about-small-thumb {
   position: absolute;
-  bottom: 0px;
-  width: 245px;
+  bottom: -20px;
+  width: 300px;
   inset-inline-start: -40px;
 }
 @media only screen and (max-width: 1366px) {
@@ -23295,7 +23295,7 @@ html.lenis body {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.76);
   z-index: 9;
-  border: 3px solid #EA5501;
+  border: 3px solid #ff0238;
 }
 .rs-contact-nine .rs-contact-wrapper {
   display: grid;
